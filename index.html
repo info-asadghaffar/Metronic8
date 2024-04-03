@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronic8</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg bg-white py-2">
+            <div class="container me-4">
+              <a href="" class="btn p-16 bg-white text-primary me-2">Dashboard</a>
+              <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-black"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-capitalize fw-bold mx-2" aria-current="page" href="#">pages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-capitalize fw-bold mx-2" href="#">apps</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-capitalize fw-bold mx-2" href="#">layout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-capitalize fw-bold mx-2" href="#">help</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="navbar-nav d-contents ms-auto mb-2 mb-lg-0 flex-center">
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="fa fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="text-gray bi bi-chat-square-dots-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="text-gray bi bi-app-indicator"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="text-gray fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="text-gray bi bi-grid-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize fs-6 fw-bold mx-2" href="#"><i class="text-gray bi bi-brightness-high-fill"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-capitalize mx-2 me-0" href="#"><img src="imgs/user_img.jpg" alt="user_img"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- //navigation -->
+        <!-- sidebar -->
+        <nav class="sidebar">
+          <ul class="ps-0">
+              <li>
+                <a href="" class="logo">
+                   <span class="d-flex align-items-center">
+                    <img src="imgs/logo.png" alt="#">
+                    <span class="text-capitalize fw-medium fs-6 ms-4 mt-3 nav-item">Metronic</span>
+                   </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-grid-fill"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">dashboard</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-person-circle"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">user profile</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-ui-checks-grid"></i>
+                    <span class="text-capitalize fw-medium fw-medium  fs-6 ms-2 nav-item">accounts</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-person"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">authentication</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-file-earmark-fill"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">corporate</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-globe2"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">social</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-bank"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">blogs</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-pie-chart-fill"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">faqs</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-paint-bucket"></i>
+                    <span class="text-capitalize fw-medium fs-6 ms-2 nav-item">pricing</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-app-indicator"></i>
+                    <span class="text-capitalize fw-medium  fs-6 ms-2 nav-item">careers</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-palette2"></i>
+                    <span class="text-capitalize fw-medium  fs-6 ms-2 nav-item">utilities</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="d-flex align-items-center">
+                    <i class="fs-6 bi bi-grid-1x2-fill"></i>
+                    <span class="text-capitalize fw-medium  fs-6 ms-2 nav-item">widgets</span>
+                  </span>
+                </a>
+              </li>
+          </ul>
+        </nav>
+        <!-- //sidebar -->
+        <!-- hero -->
+        <section class="hero">
+          <div class="container me-4 h-100">
+            <div class="details h-100 my-4 pt-4">
+              <div class="row my-4 pt-4">
+                <!-- text-->
+                <div class="col-12 col-md-6 col-lg-6">
+                  <h5 class="fw-bold fs-5">Multipurpose</h5>
+                  <span class="text-gray fw-bold">Home - Dashboard</span>
+                </div>
+                <!-- //text-->
+                <!-- button -->
+                <div class="col-12 col-md-6 col-lg-6">
+                  <a href="" class="btn fw-bold p-10 text-small bg-primary float-md-end text-white">Add Target</a>
+                  <a href="" class="btn fw-bold p-10 text-small bg-gray float-md-end me-2">Rollover</a>
+                </div>
+                <!-- //button -->
+              </div>
+            <div class="row">
+              <!-- card -->
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="card mb-4 mb-md-4 mx-sm-auto">
+                  <div class="value">
+                    <h2 class="text-white fw-bold mb-0">69</h2>
+                    <span class="text-white opacity-75 fw-bold text-capitalize">Active Projects</span>
+                  </div>
+                  <span class="d-flex align-items-center justify-content-center mb-1">
+                    <span class="text-white opacity-75 fw-bold">43 pending</span>
+                    <span class="text-white opacity-75 fw-bold ms-auto">72%</span>
+                  </span>
+                  <div class="progress">
+                    <div class="progress-bars" style="width: 72%;"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- //card -->
+              <!-- card -->
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="sales-card rounded mb-4 mb-md-4 mx-sm-auto">
+                  <div class="value">
+                    <h2 class="text-black fw-bold mb-2"><span class="text-gray fs-3">$</span> 69,700 <span class=" p-1 bg-gray fs-6 text-success opacity-75 rounded"><i class="fa fa-arrow-up"></i> 2.2%</span></h2>
+                    <span class="text-gray fs-6">Projects Earning in April</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="details mt-3 d-flex align-items-center">
+                        <div class="progres me-4">
+                          <div class="progress-bars" style="background: conic-gradient(#0fbf61 290deg, #fff 0deg);">
+                          </div>
+                        </div>
+                        <div class="text">
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet text-success me-2"></div>
+                            <span class="text-gray text-capitalize">leaf CRM</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet text-primary me-2"></div>
+                            <span class="text-gray text-capitalize">mivy app</span>
+                          </div>
+                          <div class="d-flex align-items-center mb-2">
+                            <div class="bullet text-gray opacity-75 me-2"></div>
+                            <span class="text-gray text-capitalize">others</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                     <div class="value mt-3 text-end">
+                        <p class="text-end mb-2"><span class="text-black fw-bold">$7,660</span></p>
+                        <p class="text-end mb-2"><span class="text-black fw-bold">$2,820</span></p>
+                        <p class="text-end mb-2"><span class="text-black fw-bold">$45,257</span></p>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //card -->
+            </div>
+            <div class="row mt-2">
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="heros-card rounded mb-4 mb-md-4 mx-sm-auto">
+                  <div class="value mb-4 pb-4">
+                    <h2 class="text-black fw-bold mb-0 text-capitalize">357</h2>
+                    <span class="text-gray fs-6 text-capitalize">professionals</span>
+                  </div>
+                  <div class="heros mt-4 pt-2">
+                    <h3 class="text-capitalize text-black fs-6 fw-bold">today's heroes</h3>
+                    <div class="user_images">
+                      <img src="imgs/heros (1).jpg" alt="#">
+                      <img src="imgs/heros (2).jpg" alt="#">
+                      <img src="imgs/heros (3).jpg" alt="#">
+                      <img src="imgs/heros (1).jpg" alt="#">
+                      <img src="imgs/heros (2).jpg" alt="#">
+                      <img src="imgs/heros (3).jpg" alt="#">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="link-card rounded mb-4 mb-md-4 mx-sm-auto">
+                 <div class="row">
+                  <div class="col-11">
+                    <div class="text">
+                      <h6 class="text-black mb-0 text-capitalize my-4">external links</h6>
+                      <h6 class="text-primary mb-0 text-capitalize my-4">Avg clients rating</h6>
+                      <h6 class="text-primary mb-0 text-capitalize my-4">instagram followers</h6>
+                      <h6 class="text-primary mb-0 text-capitalize my-4">google ads cpc</h6>
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <p class="text-gray text-end fs-4 my-2"><i class="fa-solid fa-square-minus"></i></p>
+                    <p class="text-gray text-end fs-4 my-2"><i class="fa-solid fa-square-up-right"></i></p>
+                    <p class="text-gray text-end fs-4 my-2"><i class="fa-solid fa-square-up-right"></i></p>
+                    <p class="text-gray text-end fs-4 my-2"><i class="fa-solid fa-square-up-right"></i></p>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- //hero -->
+    </header>
+    <!-- //header -->
+    <!-- main -->
+    <main>
+      <!-- plan -->
+      <section class="plan my-4">
+        <div class="container me-4">
+          <div class="text-center py-4">
+            <h2 class="max-width-500 fw-bold mx-auto text-center">Try our all new Enviroment with
+              <span class="text-secondry">Pro Plan</span> for Free</h2>
+              <a href="" class="btn text-white text-capitalize bg-black text-small my-4">upgrade now</a>
+          </div>
+          <div class="plan-image">
+            <p class="text-center"><img src="imgs/upgrade.svg" class="img-fluid" alt="#"></p>
+          </div>
+        </div>
+      </section>
+      <!-- //plan -->
+      <!-- performance -->
+      <section class="performance my-4">
+        <div class="container me-4">
+          <div class="text">
+            <div class="row my-4">
+              <!-- text-->
+              <div class="col-12 col-md-6 col-lg-6">
+                <h6 class="fw-bold fs-6 text-capitalize">Performance Overview</h6>
+                <span class="text-gray fw-semibold">Users from all channels</span>
+              </div>
+              <!-- //text-->
+              <!-- button -->
+              <div class="col-12 col-md-6 col-lg-6">
+                <a href="" class="btn fw-bold p-10 text-small bg-gray float-md-end text-black">week</a>
+                <a href="" class="btn fw-bold p-10 text-small bg-white text-black text-gray float-md-end me-2">month</a>
+              </div>
+              <!-- //button -->
+            </div>
+          </div>
+          <div class="value my-3">
+            <h2 class="text-black fw-bold mb-2"><span class="text-gray fs-3">$</span> 8,55 <span class=" p-1 bg-gray fs-6 text-success opacity-75 rounded"><i class="fa fa-arrow-up"></i> 2.2%</span></h2>
+            <span class="text-gray fw-medium text-capitalize">Avarage cost per interaction</span>
+          </div>
+          <div id="dot-chart"></div>
+          <div class="dotted_text ms-4 ps-4">
+            <span class="dot bg-primary me-1 ms-4"></span>
+            <span class="text-capitalize fw-semibold text-gray">social campaigns</span>
+            <span class="dot bg-success me-1 ms-4"></span>
+            <span class="text-capitalize fw-semibold text-gray">email newsletter</span>
+            <span class="dot bg-primary me-1 ms-4"></span>
+            <span class="text-capitalize fw-semibold text-gray">TV campaigns</span>
+            <p class="py-2">
+              <span class="dot bg-danger me-1 ms-4"></span>
+              <span class="text-capitalize fw-semibold text-gray">google ads</span>
+              <span class="dot bg-warning me-1 ms-4"></span>
+              <span class="text-capitalize fw-semibold text-gray">courses</span>
+              <span class="dot bg-success me-1 ms-4"></span>
+              <span class="text-capitalize fw-semibold text-gray">radio</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //performance -->
+      <!-- author -->
+      <section class="author">
+        <div class="container me-4">
+          <div class="achievements">
+            <h6 class="fw-bold fs-6 text-capitalize mb-1">Authors Achievements</h6>
+            <span class="text-gray fw-semibold">Avg. 69.34% Conv. Rate</span>
+            <span class="mb-4"><i class="fs-4 float-md-end text-gray bi bi-chat-square-dots-fill"></i></span>
+            <div class="tabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <span href="" class="btn mx-2 p-20">
+                      <p class="mb-0"><i class="text-gray fs-4 fa fa-car"></i></p>
+                      <span class="fs-6 fw-medium text-capitalize text-black">Saas</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <span href="" class="btn mx-2 p-15">
+                      <p class="mb-0"><i class="text-gray fs-4 bi bi-currency-bitcoin"></i></p>
+                      <span class="fs-6 fw-medium text-capitalize text-black">Crypto</span>
+                  </span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                    <span href="" class="btn mx-2 p-15">
+                      <p class="mb-0"><i class="text-gray fs-4 bi bi-hand-thumbs-up-fill"></i></p>
+                      <span class="fs-6 fw-medium text-capitalize text-black">Social</span>
+                    </span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">
+                    <span href="" class="btn mx-2 p-15">
+                      <p class="mb-0"><i class="text-gray fs-4 bi bi-phone"></i></p>
+                      <span class="fs-6 fw-medium text-capitalize text-black">mobile</span>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <div class="row my-2">
+                    <div class="col-5"><span class="text-gray fw-semibold text-capitalize">authors</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize ms-10">conv</span></div>
+                    <div class="col-3"><span class="text-gray fw-semibold text-capitalize ms-4">charts</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">view</span></div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">53.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (2).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">88.15%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (3).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">63.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">90.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                  <div class="row my-2">
+                    <div class="col-5"><span class="text-gray fw-semibold text-capitalize">authors</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize ms-10">conv</span></div>
+                    <div class="col-3"><span class="text-gray fw-semibold text-capitalize ms-4">charts</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">view</span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">90.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">53.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (2).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">88.15%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (3).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">63.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                  <div class="row my-2">
+                    <div class="col-5"><span class="text-gray fw-semibold text-capitalize">authors</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize ms-10">conv</span></div>
+                    <div class="col-3"><span class="text-gray fw-semibold text-capitalize ms-4">charts</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">view</span></div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">53.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (2).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">88.15%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (3).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">63.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">90.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                  <div class="row my-2">
+                    <div class="col-5"><span class="text-gray fw-semibold text-capitalize">authors</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize ms-10">conv</span></div>
+                    <div class="col-3"><span class="text-gray fw-semibold text-capitalize ms-4">charts</span></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">view</span></div>
+                  </div>
+                  <div class="row my-4">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">53.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (2).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">88.15%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (1).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">90.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                  <div class="row my-3">
+                    <div class="col-5">
+                        <img src="imgs/heros (3).jpg" class="me-2" alt="#">
+                        <span class="fw-semibold text-capitalize">Arlene McCoy</span>
+                    </div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize">63.44%</span></div>
+                    <div class="col-3"><img src="imgs/chart.png" class="img-fluid" alt="#"></div>
+                    <div class="col-2"><span class="text-gray fw-semibold text-capitalize"><i class="fa fa-arrow-right"></i></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //author -->
+      <!-- feaured -->
+      <section class="featured">
+        <div class="container me-4">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+              <div class="img">
+                <img src="imgs/featured img.jpg" alt="#">
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+              <div class="text">
+                <p class="text-capitalize mb-1 text-gray fw-semibold">featured</p>
+                <span class="text-capitalize fs-4 text-black fw-semibold">9 degree</span>
+                <span><a href="" class="btn fw-bold p-10 text-primary text-small text-capitalize bg-gray float-md-end me-2">in process</a></span>
+                <div class="user">
+                  <span><img src="imgs/user_img.jpg" alt=""></span>
+                  <span class="text-gray fw-medium text-capitalize ">manager</span>
+                  <span class="text-gray fw-medium text-capitalize">manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //feaured -->
+    </main>
+    <!-- //main -->
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/master.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+</body>
+</html>

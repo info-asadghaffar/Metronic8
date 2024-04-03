@@ -1,0 +1,179 @@
+header{
+    height: auto;
+}
+header .hero{
+    height: calc(auto - 70px);
+}
+/*************************/
+/********* nav **********/
+/***********************/
+header .navbar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    background-color: white;
+}
+header .navbar ul li  img{
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+}
+/*************************/
+/******* sidebar ********/
+/***********************/
+.sidebar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 75px;
+    background-color: #0d0e12;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.sidebar ul li{
+    list-style: none;
+}
+.sidebar ul li .logo img{
+    width: 35px;
+    margin: 30px 0 10px 20px;
+}
+.sidebar ul li a{
+    position: relative;
+    color: #9a9cae;
+    display: table;
+    width: 300px;
+    padding: 3px 0px;
+}
+.sidebar ul li a:hover{
+    color: white;    
+}
+.sidebar ul li .bi{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    text-align: center;
+}
+.sidebar ul li .nav-item{
+    position: relative;
+    top: 5px;
+}
+nav.sidebar:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+/*************************/
+/******** hero **********/
+/***********************/
+header .hero .container .card {
+    border: 1px solid transparent;
+    padding: 25px 28px;
+    height: auto;
+    width: 550px;
+    background: url(../imgs/vector-img.png) top right no-repeat;
+    background-color: #F1416C;
+}
+header .hero .container .card .value{
+    margin-bottom: 70px;
+}
+
+header .hero .container .card .progress{
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.247);
+}
+header .hero .container .card .progress-bars{
+    background-color: white;
+}
+header .hero .container .sales-card ,
+header .hero .container .heros-card , 
+header .hero .container .link-card{
+    height: auto;
+    width: 550px;
+    padding: 18px 28px;
+    background-color: white;
+    border: 1px solid rgb(240, 233, 233);
+}
+header .hero .container .progres .progress-bars{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 7px 20px rgba(22, 22, 22, 0.699);
+}
+header .hero .container .progres .progress-bars::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+header .hero .container .heros-card .heros img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0px -5px;
+    transition: 0.5s ease;
+}
+header .hero .container .heros-card .heros img:hover{
+    margin: 0px 4px;
+    cursor: pointer;
+}
+/*************************/
+/********* plan *********/
+/************************/
+.plan .container{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 40px 10px;
+}
+/*************************/
+/****** performance *****/
+/***********************/
+.performance .container{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+/*************************/
+/******** author ********/
+/***********************/
+.author .container .achievements{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+}
+.author .container .achievements .row img{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+/*************************/
+/******** featured ******/
+/***********************/
+.featured .container{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 20px;   
+}
+.featured .container .row .img img{
+    height: 320px;
+    width: 97%;
+    border-radius: 10px;
+}
+.featured .container .row .user img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
