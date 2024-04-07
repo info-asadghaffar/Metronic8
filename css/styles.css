@@ -117,14 +117,14 @@ header .hero .container .progres .progress-bars::before{
     background-color: #ffffff;
     border-radius: 50%;
 }
-header .hero .container .heros-card .heros img{
+.user_images img{
     height: 35px;
     width: 35px;
     border-radius: 50%;
     margin: 0px -5px;
     transition: 0.5s ease;
 }
-header .hero .container .heros-card .heros img:hover{
+.user_images img:hover{
     margin: 0px 4px;
     cursor: pointer;
 }
@@ -162,7 +162,7 @@ header .hero .container .heros-card .heros img:hover{
 /*************************/
 /******** featured ******/
 /***********************/
-.featured .container{
+.featured .container,.call-charts .col-6{
     border: 1px solid rgb(240, 233, 233);
     border-radius: 8px;
     padding: 20px;   
@@ -177,3 +177,64 @@ header .hero .container .heros-card .heros img:hover{
     width: 35px;
     border-radius: 50%;
 }
+/*************************/
+/******* earning ********/
+/***********************/
+.traffic {
+width: 320px;
+margin: 0 auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+.traffic svg {
+border-bottom: 2px solid #2a3254;
+}
+.traffic svg .c3-line {
+fill: none;
+stroke: url(#bgGradient) !important;
+stroke-width: 4px;
+stroke-linecap: round;
+}
+.earning .container .col-lg-4,.col-lg-7{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+.earning .container .col-lg-7 .row .col-3 img{
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
+}
+/*************************/
+/***** resources ********/
+/***********************/
+.resources .container .col-lg-4,.col-lg-7{
+    border: 1px solid rgb(240, 233, 233);
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+#chartdiv {
+width: 100%;
+height: 97vh;
+}
+/*************************/
+/******* usa map ********/
+/***********************/
+#usa-map {
+padding: 2em;
+}
+.svg-container{
+    width: 300px;
+    height: 500px;
+}
+.state {
+fill: rgb(197, 184, 184);
+}
+
+.state:hover {
+fill: green;
+transition: fill 0.15s ease;
+}
+
+  

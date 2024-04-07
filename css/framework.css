@@ -305,6 +305,9 @@ h6{
 .px-auto{
     padding: 0px auto !important;
 }
+.p-5{
+    padding: 5px !important;
+}
 .pt-5{
     padding-top: 5px !important;
 }
@@ -480,4 +483,8 @@ a.btn-secondry, .btn-secondry{
 }
 .d-contents{
     display: contents;
+}
+.dotted-border{
+    border: 2px dotted #dbdfe9;
+    border-radius: 10px;
 }
